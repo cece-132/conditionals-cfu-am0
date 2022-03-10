@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+put "Is number_teachers less than number_students?", number_teachers < number_students?
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "Is the number_teachers equal to string_teachers?", number_teachers = string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is the number_teachers not equal to number_students?", number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is the number_students greater than or equal to 20?,", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is the number_students greater than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is the number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21
 # this should print: true
 
 
@@ -53,21 +60,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#YOU DO: Explain: The code is asking is 4 less than 9. Which the output will be true
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: Explain: Books is 3. Is 4 less than books? The output will be false since 4 > 3
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: Explain: Friends is 6. Siblings is 2. Code is asking if 6 is greater than 2. This will cause the output to be true.
 
 attendees = 9;
 meals = 8;
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: Explain: Attendees is 9. meals is 8. Code asks is 9 not equal to 8. Which will cause the output to be true, since they don't equal.
 
 
 #-------------------
@@ -90,15 +97,17 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+loves_to_play && puts "Is a puppy", if age < 2 
+
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: I got a syntax error. because I am missing end somewhere. I tried putting it directly at the end of the line and still no cigar. So I am not sure where to go from here.
