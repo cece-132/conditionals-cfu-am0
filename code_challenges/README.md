@@ -21,6 +21,13 @@ def even_odd(number)
   end
 end
 
+If I could ask questions:
+  - N/A
+
+Things to improve:
+  - I think that I will look into how to do this w/o using .even? or .odd?
+  
+
 ## Medium
 
 Write a Ruby program that prints out a String or Integer: The printed value will depend on the value of an Integer. If the Integer is a mulitple of 3, print "Fizz". If the Integer is a multiple of 5, print "Buzz". If the Integer is a multiple of both 3 and 5, print "FizzBuzz". If the Integer is not a multiple of either, print the Integer itself.
@@ -33,9 +40,18 @@ def what_class(int)
       "Buzz"
     elsif int % 3 == 0
       "Fizz"
+    else
+      int
     end
   end
 end
+
+If I could ask questions:
+  - should my method accept one number at a time or multiple?
+
+Things to improve:
+  - I think there is an algorithm that does this more concisely than what I have written, I will need to look.
+     My logic was that there are more multiples of 3 so I should have more (33) vs the 20 multiples that 5 has.
 
 ## Spicy
 
@@ -51,7 +67,7 @@ Write a program that evaluates the status of the variables above, and uses logic
 - If the user either has a good record or is over 25 years old, they should pay full price
 - If the user is not over 25 and has a bad driving record, they need to have someone else sign for the rental
 
-def discount?
+def which_discount
   if good_driving_record == true && is_over_25 == true
     "get a discount on the car rental"
   elsif is_over_25 == true || good_driving_record == true
@@ -60,3 +76,10 @@ def discount?
     "need to have someone else sign for the rental"
   end
 end
+
+If I could ask questions:
+  - Would it be preffered to write this as a class with methods?
+
+Things to improve:
+  - I like the way I wrote this. I think that If I were to test this I would write tests to ensure that that
+    order I wrote out works.
